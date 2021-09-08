@@ -1,0 +1,60 @@
+<div class="container">
+    <label>First Name</label>
+    <input
+        type="text"
+        nz-input
+        [(ngModel)]="firstName"
+        placeholder="First name"
+    />
+    <label>Last Name</label>
+    <input
+        type="text"
+        nz-input
+        [(ngModel)]="lastName"
+        placeholder="Last name"
+    />
+    <label>Date of your birth</label>
+    <nz-date-picker style="margin-right: 36px;
+    margin-left: 23px;"
+        [(ngModel)]="dateOfBirth"
+    ></nz-date-picker>
+    <label style="margin-left: 48px;">Your framework</label>
+    <nz-select [(ngModel)]="framework" class="framework" style="width: 100px;"> 
+        <nz-option nzValue="angular" nzLabel="Angular:">
+            <nz-option nzValue="1.1.1" nzLabel="v1.1.1"></nz-option>
+            <nz-option nzValue="1.2.1" nzLabel="v1.2.1"></nz-option>
+            <nz-option nzValue="1.3.3" nzLabel="v1.3.3"></nz-option>
+        </nz-option>
+        <nz-option nzValue="react" nzLabel="React:">
+            <nz-option nzValue=" 2.1.2" nzLabel="v2.1.2"></nz-option>
+            <nz-option nzValue="3.2.4" nzLabel="v3.2.4"></nz-option>
+            <nz-option nzValue="4.3.1" nzLabel="v4.3.1"></nz-option>
+        </nz-option>
+        <nz-option nzValue="vue" nzLabel="vue:">
+            <nz-option nzValue="3.3.1" nzLabel="v3.3.1"></nz-option>
+            <nz-option nzValue="5.2.1" nzLabel="v5.2.1"></nz-option>
+            <nz-option nzValue="5.1.3" nzLabel="v5.1.3"></nz-option>
+        </nz-option>
+    </nz-select>
+    <label
+     class="emailLabel" 
+     style="float: inline-start;
+    margin-top: 42px;"
+    >Email</label>
+    <input
+    class="email"
+    type="email"
+    nz-input
+    [(ngModel)]="email"
+    placeholder="Email"
+    required
+    />
+    <label>Your hobby</label>
+    <input
+    type="text"
+    nz-input
+    [(ngModel)]="hobby"
+    placeholder="Hobby"
+    />
+    <button type="submit">Submit</button>
+</div>
